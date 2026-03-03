@@ -39,9 +39,10 @@ Client sends:
 Server replies:
 
 * `ACK <order_id>`
-* `FILL <buy_id> <sell_id> <price> <qty> <ts>` (0..N lines after ACK)
+* `FILL <buy_id> <sell_id> <price> <qty> <ts>` (0..N lines after `ACK`)
 * `CANCEL_OK <order_id>` / `CANCEL_REJECT <order_id>`
-* `END`
+* `BOOK ... END` (for `PRINTBOOK`)
+* `BYE` (for `QUIT`)
 
 ## Quick test
 
