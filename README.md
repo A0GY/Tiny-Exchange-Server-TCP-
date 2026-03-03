@@ -43,6 +43,7 @@ Server replies:
 * `CANCEL_OK <order_id>` / `CANCEL_REJECT <order_id>`
 * `BOOK ... END` (for `PRINTBOOK`)
 * `BYE` (for `QUIT`)
+* `END` terminates a response block
 
 ## Quick test
 
